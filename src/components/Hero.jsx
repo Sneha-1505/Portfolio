@@ -21,7 +21,7 @@ function Avatar() {
           alt={hero.photoAlt}
           width="280"
           height="280"
-          className="relative h-full w-full rounded-full object-cover"
+          className="relative h-full w-full rounded-full object-cover ring-4 ring-surface shadow-[0_18px_40px_-16px_rgba(91,33,182,0.45)]"
         />
       ) : (
         <div

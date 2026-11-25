@@ -73,8 +73,7 @@ export const hero = {
     'B.Tech CSE student at Lovely Professional University with a minor in AI/ML. I build full-stack web apps and machine-learning systems — from a Flask finance tracker to a multilingual fact-checking pipeline for WhatsApp forwards.',
   primaryCta: { label: 'Get in touch', href: '#contact' },
   secondaryCta: { label: 'Browse projects', href: '#projects' },
-  // TODO: add /public/profile.jpg, then set photo to '/profile.jpg'. Until then the "SM" initials show.
-  photo: null,
+  photo: '/profile.jpg',
   photoAlt: 'Portrait of Sneha Mangwani',
 };
 
