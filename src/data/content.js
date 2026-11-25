@@ -160,9 +160,8 @@ export const projects = [
       demo: 'https://mathvision1521.netlify.app/',
       demoLabel: 'Try the demo',
     },
-    // TODO: input image → LaTeX output screenshot, 1600x1000 .webp
-    image: null, // e.g. '/projects/math-ocr.webp'
-    imageAlt: 'Handwritten expression converted to LaTeX',
+    image: '/projects/math-ocr.webp',
+    imageAlt: 'MathVision converting handwritten E = mc² into rendered math and LaTeX code',
     visual: {
       type: 'ocr',
       caption: 'Illustration: symbols are boxed, classified, then rebuilt as LaTeX',
