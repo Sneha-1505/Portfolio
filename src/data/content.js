@@ -14,10 +14,10 @@ export const site = {
 };
 
 export const nav = [
-  { label: './home', href: '#home' },
-  { label: './projects', href: '#projects' },
-  { label: './about', href: '#about' },
-  { label: './contact', href: '#contact' },
+  { label: 'Home', href: '#home' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'About', href: '#about' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export const contact = {
@@ -25,7 +25,7 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/sneha-mangwani/',
   github: 'https://github.com/Sneha-1505',
   resume: '/resume.pdf',
-  resumeLabel: './resume.pdf',
+  resumeLabel: 'Resume',
   linkedinText: 'linkedin.com/in/sneha-mangwani',
   githubText: 'github.com/Sneha-1505',
 };

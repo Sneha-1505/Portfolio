@@ -76,7 +76,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="rounded-md px-3 py-2 font-mono text-[13px] text-muted transition-colors hover:text-primary"
+                  className="rounded-md px-3 py-2 text-[15px] font-medium text-muted transition-colors hover:text-primary"
                 >
                   {link.label}
                 </a>
@@ -132,7 +132,7 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-3 font-mono text-[14px] text-text hover:bg-primary-soft hover:text-primary"
+                    className="block rounded-lg px-3 py-3 text-[16px] font-medium text-text hover:bg-primary-soft hover:text-primary"
                   >
                     {link.label}
                   </a>

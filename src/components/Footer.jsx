@@ -98,13 +98,13 @@ export default function Footer() {
           <ul className="mt-4 space-y-1">
             {nav.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="inline-block py-1.5 font-mono text-[14px] text-muted hover:text-primary">
+                <a href={link.href} className="inline-block py-1.5 text-[15px] text-muted hover:text-primary">
                   {link.label}
                 </a>
               </li>
             ))}
             <li>
-              <ExtLink href={contact.resume} className="inline-block py-1.5 font-mono text-[14px] text-muted hover:text-primary">
+              <ExtLink href={contact.resume} className="inline-block py-1.5 text-[15px] text-muted hover:text-primary">
                 {contact.resumeLabel}
               </ExtLink>
             </li>
