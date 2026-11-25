@@ -171,47 +171,42 @@ export const projects = [
   {
     id: 'finance-assistant',
     featured: false,
-    title: 'Finance Assistant — Expense Tracker & Budget Manager',
+    title: 'FinMate AI — Personal Finance Assistant',
     summary:
-      'A full-stack web app to track spending, set monthly budgets and see trends on interactive charts.',
+      'A full-stack web app to track income and expenses, set budgets and savings goals, and see trends on interactive charts.',
     problem:
       'Keeping track of expenses and staying within budget is tedious without a simple, visual tool.',
     whatIDid: 'Built the whole app, front to back (Apr – May 2026).',
     howItWorksIntro: null,
     howItWorks: [
-      'Users sign up and log in with JWT-based authentication.',
-      'They add, edit and delete income and expense transactions through REST APIs.',
-      'They set category-wise monthly budgets and get an alert at 80% of a budget.',
-      'Dashboards with Chart.js show trends; data exports to CSV.',
+      'A FastAPI backend with SQLAlchemy and SQLite stores transactions, budgets and goals, with JWT authentication.',
+      'The React dashboard shows income, expenses, savings, a monthly trend and a category split with Recharts.',
+      'A financial health score and spending tips come from the user’s own data; an AI chat answers questions about it.',
+      'Receipts can be uploaded to draft a transaction, and reports export to CSV.',
     ],
     results:
-      '42 unit tests, 18 REST API endpoint tests and end-to-end user journeys, with 87% backend code coverage.',
+      'An expense-prediction helper built with pandas and scikit-learn, trained on a 3,000-row personal-finance dataset.',
     stack: [
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'Recharts',
       'Python',
-      'Flask',
+      'FastAPI',
       'SQLAlchemy',
-      'MySQL',
       'SQLite',
-      'JavaScript',
-      'Bootstrap',
-      'Chart.js',
       'JWT',
+      'scikit-learn',
       'REST APIs',
     ],
     links: {
       github: null, // TODO: GitHub URL
       demo: null,
     },
-    // TODO: dashboard screenshot, 1600x1000 .webp
-    image: null, // e.g. '/projects/finance-assistant.webp'
-    imageAlt: 'Finance Assistant dashboard',
-    visual: {
-      type: 'budget',
-      caption: 'Illustration: a category budget reaching the 80% alert',
-      budgetLabel: 'Groceries budget',
-      budgetPercent: 80,
-      alert: '80% used',
-    },
+    image: '/projects/finance-assistant.webp',
+    imageAlt:
+      'FinMate AI dashboard with income, expense and savings totals, a monthly trend line and an expense split chart',
+    visual: null,
   },
 ];
 

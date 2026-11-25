@@ -10,7 +10,7 @@ All edits happen in `src/data/content.js` unless noted. A value of `null` hides 
 ## Links
 
 - [ ] Handwritten Math OCR: GitHub URL → `projects[1].links.github`
-- [ ] Finance Assistant: GitHub URL → `projects[2].links.github`
+- [ ] FinMate AI (Finance Assistant): GitHub URL → `projects[2].links.github`
 - [ ] Finance Assistant: live demo URL, if any → `projects[2].links.demo`
 - [ ] Certificate "View" links → `certificates[].url`:
   - [ ] Database Management System — Part 1 (Infosys Springboard)
@@ -33,7 +33,7 @@ All edits happen in `src/data/content.js` unless noted. A value of `null` hides 
 - [ ] Project screenshots, 1600×1000 `.webp`, in `public/projects/`. Then set each project's `image`; the screenshot replaces the drawn illustration.
   - [x] `truthlens.webp` (added from the project report)
   - [x] `math-ocr.webp` (taken from the live demo)
-  - [ ] `finance-assistant.webp` (dashboard)
+  - [x] `finance-assistant.webp` (FinMate AI dashboard, taken from the running app)
 
 ## Deploy (when ready)
 
