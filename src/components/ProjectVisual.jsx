@@ -168,8 +168,9 @@ const visuals = { pipeline: PipelineVisual, ocr: OcrVisual, budget: BudgetVisual
 const paper =
   'bg-primary-soft/50 [background-image:linear-gradient(rgb(var(--border)/0.7)_1px,transparent_1px),linear-gradient(90deg,rgb(var(--border)/0.7)_1px,transparent_1px)] [background-size:22px_22px]';
 
-export default function ProjectVisual({ project, className = '' }) {
-  if (project.image) {
+/* `drawn` forces the illustration even when a screenshot exists (used in the case-study modal). */
+export default function ProjectVisual({ project, className = '', drawn = false }) {
+  if (project.image && !drawn) {
     // Framed like a window on the grid paper, so the full 16:10 shot shows at any card height.
     return (
       <div className={`flex h-full w-full items-center justify-center p-5 sm:p-8 ${paper} ${className}`}>
@@ -180,7 +181,7 @@ export default function ProjectVisual({ project, className = '' }) {
           height="1000"
           loading="lazy"
           decoding="async"
-          className="aspect-[16/10] max-h-full w-full rounded-lg border border-border object-cover shadow-[0_12px_32px_-12px_rgba(46,16,101,0.35)]"
+          className="aspect-[16/10] max-h-full w-full rounded-lg border border-border object-cover shadow-[0_12px_32px_-12px_rgba(46,16,101,0.35)] motion-safe:transition-transform motion-safe:duration-500 motion-safe:ease-out motion-safe:group-hover:-rotate-1 motion-safe:group-hover:scale-[1.04]"
         />
       </div>
     );

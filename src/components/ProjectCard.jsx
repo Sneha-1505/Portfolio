@@ -10,7 +10,7 @@ export default function ProjectCard({ project, onOpen }) {
   return (
     <article
       aria-labelledby={headingId}
-      className={`card card-lift flex h-full flex-col overflow-hidden ${
+      className={`group card card-lift flex h-full flex-col overflow-hidden ${
         featured ? 'lg:grid lg:grid-cols-[1.15fr_1fr]' : ''
       }`}
     >

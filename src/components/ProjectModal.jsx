@@ -3,6 +3,7 @@ import { m } from 'framer-motion';
 import { ExternalLink, X } from 'lucide-react';
 import { ui } from '../data/content.js';
 import { ExtLink, GithubIcon } from './ui.jsx';
+import ProjectVisual from './ProjectVisual.jsx';
 
 const FOCUSABLE =
   'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
@@ -100,6 +101,12 @@ export default function ProjectModal({ project, onClose }) {
           <p>{project.whatIDid}</p>
         </Block>
         <Block title={ui.modal.howItWorks}>
+          {/* The card shows a screenshot, so the animated drawing explains the flow here instead */}
+          {project.image && project.visual && (
+            <div className="mb-5 overflow-hidden rounded-xl border border-border min-h-[320px] sm:aspect-[16/10] sm:min-h-0">
+              <ProjectVisual project={project} drawn />
+            </div>
+          )}
           {project.howItWorksIntro && <p className="mb-3">{project.howItWorksIntro}</p>}
           <ol className="space-y-2.5">
             {project.howItWorks.map((step, i) => (

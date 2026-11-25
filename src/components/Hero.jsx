@@ -7,21 +7,25 @@ const socials = [
   { key: 'email', href: `mailto:${contact.email}`, label: ui.social.email },
 ];
 
+// Split a trailing emoji off the greeting so it can wave on its own.
+const [, greetingText, greetingEmoji] = hero.greeting.match(/^(.*?)\s*(\p{Extended_Pictographic}?)$/u);
+
 function Avatar() {
   return (
     <div className="relative mx-auto aspect-square w-[180px] sm:w-[240px] lg:w-[280px]">
-      {/* Offset outline ring: a quiet echo of the circle */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 translate-x-3 translate-y-3 rounded-full border-2 border-dashed border-primary/40"
-      />
+      {/* Offset outline ring: a quiet echo of the circle, slowly turning */}
+      <div aria-hidden="true" className="absolute inset-0 translate-x-3 translate-y-3">
+        <div className="h-full w-full rounded-full border-2 border-dashed border-primary/40 motion-safe:animate-spin-slow" />
+      </div>
       {hero.photo ? (
         <img
           src={hero.photo}
+          srcSet={hero.photoSmall ? `${hero.photoSmall} 360w, ${hero.photo} 640w` : undefined}
+          sizes="(min-width: 1024px) 280px, (min-width: 640px) 240px, 180px"
           alt={hero.photoAlt}
           width="280"
           height="280"
-          className="relative h-full w-full rounded-full object-cover ring-4 ring-surface shadow-[0_18px_40px_-16px_rgba(91,33,182,0.45)]"
+          className="relative h-full w-full rounded-full object-cover ring-4 ring-surface shadow-[0_18px_40px_-16px_rgba(91,33,182,0.45)] motion-safe:animate-pop"
         />
       ) : (
         <div
@@ -49,7 +53,15 @@ export default function Hero() {
       <Reveal immediate className="container-page relative grid items-center gap-12 md:grid-cols-[1.25fr_1fr] md:gap-8">
         <div>
           <RevealItem as="p" className="font-heading text-lg text-muted md:text-xl">
-            {hero.greeting}
+            {greetingText}
+            {greetingEmoji && (
+              <span
+                aria-hidden="true"
+                className="ml-1 inline-block origin-[70%_80%] motion-safe:animate-wave"
+              >
+                {greetingEmoji}
+              </span>
+            )}
           </RevealItem>
           <RevealItem
             as="h1"

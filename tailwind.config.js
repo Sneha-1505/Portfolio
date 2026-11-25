@@ -32,6 +32,26 @@ export default {
       boxShadow: {
         card: '0 18px 40px -18px rgb(var(--shadow) / 0.35)',
       },
+      /* CSS-only so they run before JS loads; always used with motion-safe: */
+      keyframes: {
+        pop: {
+          '0%': { transform: 'scale(0.9)' },
+          '60%': { transform: 'scale(1.02)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        wave: {
+          '0%, 60%, 100%': { transform: 'rotate(0deg)' },
+          '10%, 30%': { transform: 'rotate(14deg)' },
+          '20%': { transform: 'rotate(-8deg)' },
+          '40%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+        },
+      },
+      animation: {
+        pop: 'pop 0.8s cubic-bezier(0.22, 1, 0.36, 1) both',
+        wave: 'wave 1.8s ease-in-out 0.6s 2',
+        'spin-slow': 'spin 40s linear infinite',
+      },
     },
   },
   plugins: [],
