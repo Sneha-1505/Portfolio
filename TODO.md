@@ -31,7 +31,7 @@ All edits happen in `src/data/content.js` unless noted. A value of `null` hides 
 
 - [ ] Profile photo: save as `public/profile.jpg` (square, at least 560×560), then set `hero.photo = '/profile.jpg'`. Until then the "SM" initials show.
 - [ ] Project screenshots, 1600×1000 `.webp`, in `public/projects/`. Then set each project's `image`; the screenshot replaces the drawn illustration.
-  - [ ] `truthlens.webp` (demo UI or pipeline diagram)
+  - [x] `truthlens.webp` (added from the project report)
   - [ ] `math-ocr.webp` (input image → LaTeX output)
   - [ ] `finance-assistant.webp` (dashboard)
 

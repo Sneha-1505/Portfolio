@@ -124,9 +124,8 @@ export const projects = [
       github: 'https://github.com/SoumiryaSarangi/TruthLens',
       demo: null,
     },
-    // TODO: screenshot of the demo UI or a pipeline diagram, 1600x1000 .webp
-    image: null, // e.g. '/projects/truthlens.webp'
-    imageAlt: 'TruthLens demo interface',
+    image: '/projects/truthlens.webp',
+    imageAlt: 'TruthLens marking a forwarded health claim as false, with the fact-check source and a ready-made reply',
     // Drawn illustration shown until a screenshot is added.
     visual: {
       type: 'pipeline',

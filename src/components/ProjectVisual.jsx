@@ -164,26 +164,31 @@ function BudgetVisual({ visual }) {
 
 const visuals = { pipeline: PipelineVisual, ocr: OcrVisual, budget: BudgetVisual };
 
+/* Grid-paper backdrop shared by the drawn illustrations and framed screenshots. */
+const paper =
+  'bg-primary-soft/50 [background-image:linear-gradient(rgb(var(--border)/0.7)_1px,transparent_1px),linear-gradient(90deg,rgb(var(--border)/0.7)_1px,transparent_1px)] [background-size:22px_22px]';
+
 export default function ProjectVisual({ project, className = '' }) {
   if (project.image) {
+    // Framed like a window on the grid paper, so the full 16:10 shot shows at any card height.
     return (
-      <img
-        src={project.image}
-        alt={project.imageAlt}
-        width="1600"
-        height="1000"
-        loading="lazy"
-        decoding="async"
-        className={`h-full w-full object-cover ${className}`}
-      />
+      <div className={`flex h-full w-full items-center justify-center p-5 sm:p-8 ${paper} ${className}`}>
+        <img
+          src={project.image}
+          alt={project.imageAlt}
+          width="1600"
+          height="1000"
+          loading="lazy"
+          decoding="async"
+          className="aspect-[16/10] max-h-full w-full rounded-lg border border-border object-cover shadow-[0_12px_32px_-12px_rgba(46,16,101,0.35)]"
+        />
+      </div>
     );
   }
   const Visual = visuals[project.visual?.type];
   if (!Visual) return null;
   return (
-    <div
-      className={`h-full w-full bg-primary-soft/50 [background-image:linear-gradient(rgb(var(--border)/0.7)_1px,transparent_1px),linear-gradient(90deg,rgb(var(--border)/0.7)_1px,transparent_1px)] [background-size:22px_22px] ${className}`}
-    >
+    <div className={`h-full w-full ${paper} ${className}`}>
       <Visual visual={project.visual} />
     </div>
   );
