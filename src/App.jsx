@@ -15,9 +15,9 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Skills />
         <Projects />
         <Journey />
-        <Skills />
         <Story />
         <CTA />
       </main>

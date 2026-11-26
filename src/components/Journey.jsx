@@ -13,9 +13,9 @@ export default function Journey() {
   return (
     <section id="journey" aria-labelledby="journey-title" className="section border-y border-border bg-surface/60">
       <Reveal className="container-page">
-        <SectionHeader id="journey-title" title={journeySection.title} subtitle={journeySection.subtitle} />
-
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
+          <div>
+          <SectionHeader id="journey-title" title={journeySection.title} subtitle={journeySection.subtitle} />
           {/* Timeline, newest first. The violet line draws down as you scroll. */}
           <ol ref={lineRef} className="relative ml-1.5">
             <span aria-hidden="true" className="absolute inset-y-0 -left-px w-0.5 bg-border" />
@@ -45,12 +45,15 @@ export default function Journey() {
               </RevealItem>
             ))}
           </ol>
+          </div>
 
-          {/* Certificates */}
+          {/* Certificates: same heading size as Journey */}
           <div>
-            <RevealItem as="h3" className="mb-5 text-lg font-semibold">
-              {journeySection.certificatesTitle}
-            </RevealItem>
+            <SectionHeader
+              id="certificates-title"
+              title={journeySection.certificatesTitle}
+              subtitle={journeySection.certificatesSubtitle}
+            />
             <ul className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
               {certificates.map((cert) => (
                 <RevealItem as="li" key={cert.title} className="card flex gap-4 p-5">

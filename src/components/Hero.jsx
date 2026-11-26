@@ -66,7 +66,7 @@ export default function Hero() {
           <RevealItem
             as="h1"
             id="hero-title"
-            className="mt-3 text-[36px] font-bold leading-[1.08] sm:text-[44px] lg:text-[60px]"
+            className="mt-3 whitespace-pre-line text-[31px] font-bold leading-[1.08] sm:text-[40px] md:text-[32px] lg:text-[52px]"
           >
             {hero.headline}
           </RevealItem>
