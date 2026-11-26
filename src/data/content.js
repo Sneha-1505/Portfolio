@@ -44,6 +44,7 @@ export const ui = {
   copyFailed: 'Copy failed. Email: ',
   backToTop: 'Back to top ↑',
   view: 'View',
+  viewCertificate: 'View certificate',
   liveDemo: 'Live demo',
   opensNewTab: '(opens in a new tab)',
   techStack: 'tech stack',
@@ -263,6 +264,7 @@ export const journey = [
     title: 'Job Ready DSA Boot Camp (C++)',
     organiser: 'Eduniketan Private Limited',
     line: 'Data structures, algorithms and LeetCode-based problem-solving.',
+    certificateUrl: 'https://drive.google.com/file/d/1wbj3xyKwE3hBn4LKB-1LiLdw8KzGXB4h/view?usp=sharing',
   },
   {
     when: null, // TODO: date
@@ -288,20 +290,20 @@ export const certificates = [
   {
     title: 'Database Management System — Part 1',
     issuer: 'Infosys Springboard',
-    date: 'Jul 2026',
-    url: null, // TODO: certificate URL
+    date: 'Aug 2026',
+    url: 'https://drive.google.com/file/d/1wus-BLajVjeieqh8r7fQd3H4NeoNb6R4/view?usp=sharing',
   },
   {
     title: 'Generative AI',
     issuer: 'NASSCOM Skill Development Program, SFJ',
     date: 'Feb 2026',
-    url: null, // TODO: certificate URL
+    url: 'https://drive.google.com/file/d/1ngRuqVdp5TMWuDuSKkP6mbjtjtc3tcpV/view?usp=sharing',
   },
   {
     title: 'Programming using C++',
     issuer: 'Infosys Springboard',
     date: 'Aug 2025',
-    url: null, // TODO: certificate URL
+    url: 'https://drive.google.com/file/d/1h2zJTv-ycojPByRbwVRugff7BFCsEXVk/view?usp=sharing',
   },
 ];
 

@@ -42,6 +42,15 @@ export default function Journey() {
                 <h3 className="mt-1 text-lg font-semibold">{entry.title}</h3>
                 <p className="text-[15px] font-medium text-primary">{entry.organiser}</p>
                 <p className="mt-1.5 max-w-prose text-muted">{entry.line}</p>
+                {entry.certificateUrl && (
+                  <ExtLink href={entry.certificateUrl} className="link mt-2 inline-flex items-center gap-1 text-sm">
+                    {ui.viewCertificate}
+                    <ExternalLink size={14} aria-hidden="true" />
+                    <span className="sr-only">
+                      {entry.title} {ui.opensNewTab}
+                    </span>
+                  </ExtLink>
+                )}
               </RevealItem>
             ))}
           </ol>

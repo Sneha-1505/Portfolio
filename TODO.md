@@ -14,10 +14,7 @@ All edits happen in `src/data/content.js` unless noted. A value of `null` hides 
 - [ ] Mausam: your role in the team and how far you got in SIH → `projects[1].whatIDid`
 - [x] Mausam: GitHub URL → `projects[1].links.github`
 - [ ] FinMate AI demo: ai-personal-finance-assitant.vercel.app loads, but its dashboard says "Could not load finance dashboard" (backend not deployed). Add it to `projects[3].links.demo` once it works
-- [ ] Certificate "View" links → `certificates[].url`:
-  - [ ] Database Management System — Part 1 (Infosys Springboard)
-  - [ ] Generative AI (NASSCOM / SFJ)
-  - [ ] Programming using C++ (Infosys Springboard)
+- [x] Certificate "View" links → `certificates[].url` (added; the DSA Boot Camp one is linked from its Journey entry)
 
 ## Metrics
 
