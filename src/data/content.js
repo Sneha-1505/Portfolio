@@ -138,6 +138,46 @@ export const projects = [
     },
   },
   {
+    id: 'mausam',
+    featured: true,
+    title: 'Mausam — Personalized Weather App',
+    summary:
+      'A mobile weather app that shapes forecasts, alerts and advice around who you are and how your day looks, built for Smart India Hackathon 2026.',
+    problem:
+      'Generic weather apps show the same numbers to everyone. A farmer, a daily commuter and a parent planning a school run need very different answers from the same forecast.',
+    // TODO: add your role in the team and how far the team got in SIH.
+    whatIDid: 'Team project for Smart India Hackathon 2026 (Problem Statement 76), built in September 2026.',
+    howItWorksIntro: null,
+    howItWorks: [
+      'Onboarding asks for a name, location, persona, daily routine and weather priorities.',
+      'Live forecast, air-quality and marine data come from the Open-Meteo APIs for the chosen location.',
+      'Eight personas, from farmer to commuter, change the home cards, alerts, what-to-carry tips and AI answers.',
+      'Farmers get a crop sowing advisor that checks the weather against rules for each crop.',
+      'A built-in weather assistant answers in English, Hindi and eight regional Indian languages, and a planner suggests the best times for the day.',
+    ],
+    results:
+      'A working Expo app with a web build, live weather data, personalized alerts and an atmosphere view with precipitation, cloud and wind layers.',
+    stack: [
+      'React Native',
+      'Expo',
+      'Expo Router',
+      'JavaScript',
+      'Three.js',
+      'Open-Meteo API',
+      'Expo Notifications',
+      'Node.js',
+      'Express',
+    ],
+    links: {
+      github: 'https://github.com/Sneha-1505/Mausam-Smart-Weather-App',
+      demo: null,
+    },
+    image: '/projects/mausam.webp',
+    imageAlt:
+      'Three Mausam screens: a farmer’s home screen with live weather and an air-quality alert, the atmosphere radar, and persona selection',
+    visual: null,
+  },
+  {
     id: 'math-ocr',
     featured: false,
     title: 'Handwritten Math OCR → LaTeX',
@@ -156,7 +196,7 @@ export const projects = [
     results: 'Runs on CPU only.',
     stack: ['Python', 'PyTorch', 'OpenCV', 'CNN', 'CROHME'],
     links: {
-      github: null, // TODO: GitHub URL
+      github: 'https://github.com/darkrazz1521/mathvision',
       demo: 'https://mathvision1521.netlify.app/',
       demoLabel: 'Try the demo',
     },
@@ -200,7 +240,7 @@ export const projects = [
       'REST APIs',
     ],
     links: {
-      github: null, // TODO: GitHub URL
+      github: 'https://github.com/rrana344/Ai-personal-finance-assitant',
       demo: null,
     },
     image: '/projects/finance-assistant.webp',

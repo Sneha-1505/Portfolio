@@ -9,9 +9,11 @@ All edits happen in `src/data/content.js` unless noted. A value of `null` hides 
 
 ## Links
 
-- [ ] Handwritten Math OCR: GitHub URL → `projects[1].links.github`
-- [ ] FinMate AI (Finance Assistant): GitHub URL → `projects[2].links.github`
-- [ ] Finance Assistant: live demo URL, if any → `projects[2].links.demo`
+- [x] Handwritten Math OCR: GitHub URL → `projects[2].links.github`
+- [x] FinMate AI (Finance Assistant): GitHub URL → `projects[3].links.github`
+- [ ] Mausam: your role in the team and how far you got in SIH → `projects[1].whatIDid`
+- [x] Mausam: GitHub URL → `projects[1].links.github`
+- [ ] FinMate AI demo: ai-personal-finance-assitant.vercel.app loads, but its dashboard says "Could not load finance dashboard" (backend not deployed). Add it to `projects[3].links.demo` once it works
 - [ ] Certificate "View" links → `certificates[].url`:
   - [ ] Database Management System — Part 1 (Infosys Springboard)
   - [ ] Generative AI (NASSCOM / SFJ)
@@ -34,6 +36,7 @@ All edits happen in `src/data/content.js` unless noted. A value of `null` hides 
   - [x] `truthlens.webp` (added from the project report)
   - [x] `math-ocr.webp` (taken from the live demo)
   - [x] `finance-assistant.webp` (FinMate AI dashboard, taken from the running app)
+  - [x] `mausam.webp` (three screens from the web build)
 
 ## Deploy (when ready)
 
