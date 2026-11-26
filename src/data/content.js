@@ -67,7 +67,7 @@ export const ui = {
 };
 
 export const hero = {
-  greeting: "Hi, I'm Sneha 👋",
+  greeting: "Hi, I'm Sneha",
   headline: 'Software Developer & AI/ML Enthusiast',
   intro:
     'B.Tech CSE student at Lovely Professional University with a minor in AI/ML. I build full-stack web apps and machine-learning systems — from a Flask finance tracker to a multilingual fact-checking pipeline for WhatsApp forwards.',
