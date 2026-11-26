@@ -17,7 +17,21 @@ export default function Story() {
           </div>
         </div>
 
-        <RevealItem as="aside" aria-labelledby="education-title" className="card self-start p-6 sm:p-7 lg:mt-[76px]">
+        <div className="space-y-6 self-start lg:mt-[76px]">
+        <RevealItem as="figure" className="card overflow-hidden">
+          <img
+            src={story.photo.src}
+            alt={story.photo.alt}
+            width="750"
+            height="600"
+            loading="lazy"
+            decoding="async"
+            className="aspect-[5/4] w-full object-cover"
+          />
+          <figcaption className="px-5 py-3 text-sm text-muted">{story.photo.caption}</figcaption>
+        </RevealItem>
+
+        <RevealItem as="aside" aria-labelledby="education-title" className="card p-6 sm:p-7">
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-primary-soft text-primary">
               <GraduationCap size={20} aria-hidden="true" />
@@ -39,6 +53,7 @@ export default function Story() {
             ))}
           </ul>
         </RevealItem>
+        </div>
       </Reveal>
     </section>
   );

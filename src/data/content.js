@@ -70,7 +70,7 @@ export const hero = {
   greeting: "Hi, I'm Sneha",
   headline: 'Software Developer &\nAI/ML Enthusiast', // \n = intentional line break
   intro:
-    'B.Tech CSE student at Lovely Professional University with a specialization in AI/ML. I build full-stack web apps and machine-learning systems — from a Flask finance tracker to a multilingual fact-checking pipeline for WhatsApp forwards.',
+    'B.Tech CSE student at Lovely Professional University with a specialization in AI/ML. I build full-stack web apps and machine-learning systems — from a FastAPI finance assistant to a multilingual fact-checking pipeline for WhatsApp forwards.',
   primaryCta: { label: 'Get in touch', href: '#contact' },
   secondaryCta: { label: 'Browse projects', href: '#projects' },
   photo: '/profile-640.webp', // 640px; profile.jpg is the full-size edit
@@ -344,10 +344,15 @@ export const story = {
   // TODO for Sneha: read the story and change any line that doesn't sound like you.
   paragraphs: [
     'I started my B.Tech in Computer Science at Lovely Professional University in 2024, and C++ was where it clicked for me. Solving 100+ DSA problems and building an operating-systems simulator for page-replacement algorithms taught me to think about efficiency, not just correctness.',
-    'From there I moved to the web. My Finance Assistant project was my first full-stack app: REST APIs, JWT authentication, dashboards, and a proper test suite with 87% backend coverage.',
+    'From there I moved to the web. FinMate AI, my personal finance assistant, was my first full-stack app: a React dashboard, a FastAPI backend with REST APIs and JWT authentication, and charts that show where the money goes.',
     "My AI/ML specialization pulled me toward models that work on messy, real-world input — handwritten maths, and fact-checking forwards written in Hindi, Punjabi and Romanized text. I'm now looking for internships where I can build useful software and keep growing as an engineer.",
   ],
   educationTitle: 'Education',
+  photo: {
+    src: '/hosting.webp',
+    alt: 'Sneha speaking at a podium in front of the Lovely Professional University emblem',
+    caption: 'Hosting a CodingBlocks event.',
+  },
 };
 
 export const education = [
